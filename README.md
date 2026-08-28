@@ -1,2 +1,2 @@
 # Salesforce-Portfolio
-This Example is for an Information Technology company in which they are selling Salesforce Native application to other companies.
+A collection of Salesforce Administration projects, automation, configuration, reporting, security, and troubleshooting scenarios.
