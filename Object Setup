@@ -1,0 +1,23 @@
+Created a Custom Object Customer Onboarding And fields:- 
+Account                - Lookup
+Opportunity            - Master Detail
+Onboarding Status      - Picklist
+Start Date             - Date Field
+Completion Date        - Date Field
+
+Created Another Object : - Sales Request
+
+Request Type           - Picklist
+Account                - Lookup
+Opportunity            - Lookup
+Request Status         - Picklist
+Priority               - Picklist
+Request Description    - Long Text Area         
+
+Created Another Object :- Data Quality Issue 
+
+Account                - Lookup
+Contact                - Lookup
+Issue Type             - Picklist
+Status                 - Picklist
+Resolution Date        - Date
