@@ -54,3 +54,17 @@ Risk Level - Formula(Text) - IF( ExpectedRevenue <= 20000, 'Low', 'High')
 Contact:- 
 Decision Maker - Formula(Checkbox) - IF(ISPICKVAL(Departments__c, 'Finance & Accounting'), true, false)
 Preferred Contact Method - Picklist
+
+
+Security Model
+
+Since we created 3 permission sets for our 3 custom object. However, we could have done it in one permission set but doing it with a separate one can be assigned to other team members as well to not give the access which is not required. We created a permission set group and assigned this to Dipti Agarwal (Standard User) Support Team and Rahul Chaurasiya is Support Manager in role.
+
+<img width="1908" height="816" alt="image" src="https://github.com/user-attachments/assets/2b8d5ee2-62a3-4b93-8477-f4b1cd24243b" />
+
+Moreover the Owd for Account, Opportunity, Contact, Case, Sales Request, Customer Onboarding and Data quality is set to private.
+
+<img width="1903" height="759" alt="image" src="https://github.com/user-attachments/assets/6193a0b4-0cdf-4d3b-81bc-1be6c4f4593e" />
+
+
+<img width="1902" height="816" alt="image" src="https://github.com/user-attachments/assets/b9516d0b-2e44-4d93-ad2b-98f2a9fe274f" />
