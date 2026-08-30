@@ -31,7 +31,7 @@ Request Description    - Long Text Area
 
 <img width="1914" height="768" alt="image" src="https://github.com/user-attachments/assets/385be1bf-e0fd-4da2-ad27-0f604495c0d3" />
 
-4. Created Custom Fields on Account, Opportunity and Contacts
+3. Created Custom Fields on Account, Opportunity and Contacts
    
 Account:-
 Customer Tier - Picklist,
@@ -59,7 +59,7 @@ Decision Maker - Formula(Checkbox) - IF(ISPICKVAL(Departments__c, 'Finance & Acc
 Preferred Contact Method - Picklist
 
 
-5. Security Model
+4. Security Model
 
 Since we created 3 permission sets for our 3 custom object. However, we could have done it in one permission set but doing it with a separate one can be assigned to other team members as well to not give the access which is not required. We created a permission set group and assigned this to Dipti Agarwal (Standard User) Support Team and Rahul Chaurasiya is Support Manager in role.
 
@@ -107,7 +107,7 @@ Another example of flow where This flow triggers and create one task and send em
 
 <img width="1917" height="819" alt="image" src="https://github.com/user-attachments/assets/f1322504-0785-4c47-a761-4ec07e033633" />
 
-6. Reports
+5. Reports
 
    Here is an example of Tabular reports where we are using only filters to show opportunity.
 
@@ -129,7 +129,7 @@ Here is an example of Dashboard combining the report.
 
 <img width="1917" height="824" alt="image" src="https://github.com/user-attachments/assets/682aa843-ee57-4500-b153-e86b72f8f255" />
 
-7. Data
+6. Data
 
 After creating all these object and rules. We need data in the salesforce org. So we uploaded the data via Data Import Wizard for Account and Contact. Where First we imported the account and used the account name to map contact with the account.
 
@@ -137,7 +137,7 @@ After creating all these object and rules. We need data in the salesforce org. S
 
 Moreover, we can not use Data import wizard to insert opportunity in Developer edition. So we used workbench to insert opportunity.
 
-8. Since Developer edition does not have Sandbox available. I have explained it below.
+7. Since Developer edition does not have Sandbox available. I have explained it below.
 
    ### Flow Deployment & Change Management
 
