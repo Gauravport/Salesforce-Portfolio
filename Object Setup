@@ -2,8 +2,7 @@ Created a Custom Object Customer Onboarding And fields:-
 Account                - Lookup
 Opportunity            - Master Detail
 Onboarding Status      - Picklist
-Start Date             - Date Field
-Completion Date        - Date Field
+Completion Date        - Formula (Date) - IF(ISPICKVAL(Opportunity__r.StageName , 'Closed Won'), Today(), null)
 
 Created Another Object : - Sales Request
 
