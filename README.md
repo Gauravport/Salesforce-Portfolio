@@ -54,7 +54,7 @@ Decision Maker - Formula(Checkbox) - IF(ISPICKVAL(Departments__c, 'Finance & Acc
 Preferred Contact Method - Picklist
 
 
-Security Model
+5. Security Model
 
 Since we created 3 permission sets for our 3 custom object. However, we could have done it in one permission set but doing it with a separate one can be assigned to other team members as well to not give the access which is not required. We created a permission set group and assigned this to Dipti Agarwal (Standard User) Support Team and Rahul Chaurasiya is Support Manager in role.
 
@@ -131,3 +131,9 @@ After creating all these object and rules. We need data in the salesforce org. S
 <img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/2d5d68db-c944-4bf3-91d2-fa99d1c3c688" />
 
 Moreover, we can not use Data import wizard to insert opportunity in Developer edition. So we used workbench to insert opportunity.
+
+8. Since Developer edition does not have Sandbox available. I have explained it below.
+
+   ### Flow Deployment & Change Management
+
+In a production Salesforce environment, I would first develop and configure the Flow in a sandbox environment rather than making changes directly in production. After completing the configuration, I would test the Flow using multiple scenarios, including positive, negative, and edge cases, and verify that the Flow does not create unintended updates, duplicate records, or recursive execution. Once testing is complete, I would document the change, its business purpose, dependencies, and expected impact, and validate the required metadata and configuration. The Flow would then be deployed to the production environment using an appropriate Salesforce deployment method, such as Change Sets or Salesforce CLI/DevOps tools, depending on the organization's release-management process. After deployment, I would activate the appropriate Flow version in production, perform post-deployment validation with representative records, monitor for errors, and confirm with the relevant stakeholders that the business process is functioning as expected. Any issues identified after deployment would be investigated through Flow error emails, debug logs, and configuration review, with corrective changes managed through the same controlled deployment process.
