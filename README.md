@@ -15,8 +15,6 @@ Created One Screen flow for Customer Onboarding to create record.
 It is being used on opportunity object in quick action.
 <img width="1913" height="809" alt="image" src="https://github.com/user-attachments/assets/d87185c3-0c4a-408c-bf9e-3daf8d8d7cdc" />
 
-
-
 2. Created Another Object : - Sales Request, Fields Created: 
 
 Request Type           - Picklist,
@@ -118,4 +116,18 @@ Another example of flow where This flow triggers and create one task and send em
 
    <img width="1918" height="822" alt="image" src="https://github.com/user-attachments/assets/22abcbe1-ef33-403b-875b-bb5c708f2606" />
 
-   Here is one more example for 
+   Here is one more example for Joined report.
+
+   <img width="1909" height="794" alt="image" src="https://github.com/user-attachments/assets/c3322f7b-2b2d-42e7-8886-9f1c2f6aa290" />
+
+Here is an example of Dashboard combining the report.
+
+<img width="1917" height="824" alt="image" src="https://github.com/user-attachments/assets/682aa843-ee57-4500-b153-e86b72f8f255" />
+
+7. Data
+
+After creating all these object and rules. We need data in the salesforce org. So we uploaded the data via Data Import Wizard for Account and Contact. Where First we imported the account and used the account name to map contact with the account.
+
+<img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/2d5d68db-c944-4bf3-91d2-fa99d1c3c688" />
+
+Moreover, we can not use Data import wizard to insert opportunity in Developer edition. So we used workbench to insert opportunity.
