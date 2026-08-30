@@ -1,6 +1,11 @@
 # Salesforce-Portfolio
 A collection of Salesforce Administration projects, automation, configuration, reporting, security, and troubleshooting scenarios. In this project we have designed this org for an IT company which is selling there products to other companies.
 
+Here is the Architecture Diagram for this Business Scenario.
+
+<img width="1536" height="1024" alt="ChatGPT Image Aug 30, 2026, 09_18_51 PM" src="https://github.com/user-attachments/assets/06fa6de0-5d95-4810-b132-96f62a736c49" />
+
+
 1. Created a Custom Object Customer Onboarding And fields:- Account - Lookup,
 Opportunity            - Master Detail,
 Onboarding Status      - Picklist,
