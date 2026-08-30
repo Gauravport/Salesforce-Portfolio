@@ -76,4 +76,46 @@ In this example Support Manager is able to see the record owned by Support team 
 
 Moreover, We have also written a sharing rule where Closed won opportunity is shared with finance team.
 
-![Uploading image.png…]()
+<img width="1899" height="812" alt="image" src="https://github.com/user-attachments/assets/5984c379-0c6d-4d43-b69c-ece96e284652" />
+
+We utilize dedicated Account and Opportunity record types to isolate new customer acquisition from existing account management, optimizing the layout and sales stages for each motion. 
+
+<img width="1908" height="819" alt="image" src="https://github.com/user-attachments/assets/ab532f70-a437-4fd7-b90d-7d7f291630a2" />
+
+We have created dedicated 'Opportunity Information' and 'Renewal Information' page layouts to ensure users see only the relevant fields, picklists, and sections required for either a new sales cycle or an active contract renewal.
+
+<img width="1911" height="820" alt="image" src="https://github.com/user-attachments/assets/a2522f53-d091-4784-83d5-68231fe2e980" />
+
+I have implemented targeted validation rules across these record types to enforce data integrity, ensuring critical fields are populated correctly at key sales stages before a deal can progress.
+
+<img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/8ad352dc-454a-49c3-9efa-f5546211d837" />
+
+<img width="1918" height="825" alt="image" src="https://github.com/user-attachments/assets/b0d6dd83-0580-48ac-9533-b8ce2f7e0418" />
+
+<img width="1918" height="825" alt="image" src="https://github.com/user-attachments/assets/5c00e04e-b0ae-4b28-a3fe-df4b9016a16c" />
+
+Here is an example of flow which is sending an opportunity for approval if amount is than 100000 and discount more than 5%.
+
+<img width="1918" height="820" alt="image" src="https://github.com/user-attachments/assets/d94507b2-e5c3-475e-9070-26fafb58e86b" />
+
+<img width="1918" height="823" alt="image" src="https://github.com/user-attachments/assets/9f30dc96-c46c-4745-892d-ab05fcdbd357" />
+
+Another example of flow where This flow triggers and create one task and send email to the primary contact for onboarding and send notification to the opportunity owner.
+
+<img width="1917" height="819" alt="image" src="https://github.com/user-attachments/assets/f1322504-0785-4c47-a761-4ec07e033633" />
+
+6. Reports
+
+   Here is an example of Tabular reports where we are using only filters to show opportunity.
+
+   <img width="1918" height="813" alt="image" src="https://github.com/user-attachments/assets/ccb4210d-a9fe-4192-8250-9fc7dc0f6e9f" />
+
+   Here is one more example of Summary report where Opportunity is grouped by stage
+
+   <img width="1912" height="789" alt="image" src="https://github.com/user-attachments/assets/3d4d7de8-56c8-4957-9251-6e5df64db6c9" />
+
+   Here is one more example of Matrix report where we have used grouped by row and coloumn both.
+
+   <img width="1918" height="822" alt="image" src="https://github.com/user-attachments/assets/22abcbe1-ef33-403b-875b-bb5c708f2606" />
+
+   Here is one more example for 
