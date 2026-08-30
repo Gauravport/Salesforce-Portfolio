@@ -30,23 +30,23 @@ Request Description    - Long Text Area
 
 4. Created Custom Fields on Account, Opportunity and Contacts
    
-Account
-Customer Tier
-Customer Segment
-Region
-Industry
-Customer Health
-Data Quality Status
+Account:-
+Customer Tier - Picklist,
+Customer Segment - Picklist,
+Region - Picklist
+Industry - Picklist
+Customer Health - Formula
 
-Opportunity
-Deal Type
-Sales Region
-Expected ARR
-Competitor
-Approval Required
-Risk Level
+Opportunity:-
+Deal Type - Picklist
+Sales Region - Formula Text -IF(
+ISPICKVAL( Account.Region__c , 'EMEA'), 'EMEA',
+IF(ISPICKVAL( Account.Region__c , 'AMER'), 'AMER',
+IF(ISPICKVAL( Account.Region__c , 'APAC'), 'APAC',
+IF(ISPICKVAL( Account.Region__c , 'LATAM'), 'LATAM', null))) ),
+Approval Required - Formula(Checkbox)- IF(AND(Amount >= 100000, Discount__c>=0.05), True, False),
+Risk Level - Formula(Text) - IF( ExpectedRevenue <= 20000, 'Low', 'High')
 
-Contact
-Department
-Decision Maker
-Preferred Contact Method
+Contact:- 
+Decision Maker - Formula(Checkbox) - IF(ISPICKVAL(Departments__c, 'Finance & Accounting'), true, false)
+Preferred Contact Method - Picklist
