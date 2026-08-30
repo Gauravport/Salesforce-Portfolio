@@ -28,3 +28,24 @@ Request Description    - Long Text Area
 
 <img width="1914" height="768" alt="image" src="https://github.com/user-attachments/assets/385be1bf-e0fd-4da2-ad27-0f604495c0d3" />
 
+4. Created Custom Fields on Account, Opportunity and Contacts
+Account
+Customer Tier
+Customer Segment
+Region
+Industry
+Customer Health
+Data Quality Status
+
+Opportunity
+Deal Type
+Sales Region
+Expected ARR
+Competitor
+Approval Required
+Risk Level
+
+Contact
+Department
+Decision Maker
+Preferred Contact Method
