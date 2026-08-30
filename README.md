@@ -39,12 +39,16 @@ Customer Health - Formula
 
 Opportunity:-
 Deal Type - Picklist
-Sales Region - Formula Text -IF(
+Sales Region - 
+
+Formula Text -IF(
 ISPICKVAL( Account.Region__c , 'EMEA'), 'EMEA',
 IF(ISPICKVAL( Account.Region__c , 'AMER'), 'AMER',
 IF(ISPICKVAL( Account.Region__c , 'APAC'), 'APAC',
 IF(ISPICKVAL( Account.Region__c , 'LATAM'), 'LATAM', null))) ),
+
 Approval Required - Formula(Checkbox)- IF(AND(Amount >= 100000, Discount__c>=0.05), True, False),
+
 Risk Level - Formula(Text) - IF( ExpectedRevenue <= 20000, 'Low', 'High')
 
 Contact:- 
