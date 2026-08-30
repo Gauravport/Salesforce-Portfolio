@@ -1,7 +1,7 @@
 # Salesforce-Portfolio
 A collection of Salesforce Administration projects, automation, configuration, reporting, security, and troubleshooting scenarios. In this project we have designed this org for an IT company which is selling there products to other companies.
 
-Created a Custom Object Customer Onboarding And fields:- Account - Lookup,
+1. Created a Custom Object Customer Onboarding And fields:- Account - Lookup,
 Opportunity            - Master Detail,
 Onboarding Status      - Picklist,
 Completion Date        - Formula (Date) - IF(ISPICKVAL(Opportunity__r.StageName , 'Closed Won'), Today(), null)
@@ -17,23 +17,14 @@ It is being used on opportunity object in quick action.
 
 
 
-Created Another Object : - Sales Request
+2. Created Another Object : - Sales Request, Fields Created: 
 
-Request Type           - Picklist
-Account                - Lookup
-Opportunity            - Lookup
-Request Status         - Picklist
-Priority               - Picklist
-Request Description    - Long Text Area     
+Request Type           - Picklist,
+Account                - Lookup,
+Opportunity            - Lookup,
+Request Status         - Picklist,
+Priority               - Picklist,
+Request Description    - Long Text Area
 
 <img width="1914" height="768" alt="image" src="https://github.com/user-attachments/assets/385be1bf-e0fd-4da2-ad27-0f604495c0d3" />
-
-
-Created Another Object :- Data Quality Issue 
-
-Account                - Lookup
-Contact                - Lookup
-Issue Type             - Picklist
-Status                 - Picklist
-Resolution Date        - Date
 
