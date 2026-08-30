@@ -66,5 +66,14 @@ Moreover the Owd for Account, Opportunity, Contact, Case, Sales Request, Custome
 
 <img width="1903" height="759" alt="image" src="https://github.com/user-attachments/assets/6193a0b4-0cdf-4d3b-81bc-1be6c4f4593e" />
 
+Here is the permission set group which is assigned to one user since developer org has limited license.
 
 <img width="1902" height="816" alt="image" src="https://github.com/user-attachments/assets/b9516d0b-2e44-4d93-ad2b-98f2a9fe274f" />
+
+In this example Support Manager is able to see the record owned by Support team via Role Hierarchy.
+
+<img width="1909" height="813" alt="image" src="https://github.com/user-attachments/assets/6ec2324a-b95f-4a6a-bdfd-63e47af6c6f9" />
+
+Moreover, We have also written a sharing rule where Closed won opportunity is shared with finance team.
+
+![Uploading image.png…]()
