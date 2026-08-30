@@ -13,7 +13,7 @@ I enjoy translating business requirements into practical Salesforce solutions an
 * 🔹 Salesforce Certified Administrator (ADM 201)
 * 🔹 100,000+ Trailhead Points
 * 🔹 Experience supporting Salesforce-based applications and business processes
-* 🔹 100+ customer-facing calls and product demonstrations
+* 🔹 Customer-facing calls and product demonstrations
 * 🔹 Experience working with Sales, Marketing, and customer-facing teams
 * 🔹 Strong focus on Salesforce configuration, automation, reporting, data quality, and troubleshooting
 
