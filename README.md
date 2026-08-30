@@ -1,144 +1,30 @@
-# Salesforce-Portfolio
-A collection of Salesforce Administration projects, automation, configuration, reporting, security, and troubleshooting scenarios. In this project we have designed this org for an IT company which is selling there products to other companies.
+GAURAV KUMAR PAL 
+Salesforce Administrator 
+Salesforce Sales Operations Portfolio            
+CRM • Automation • Security • Data • Reporting 
+[ View GitHub ]  [ LinkedIn ]  [ Resume ]   
 
-Here is the Architecture Diagram for this Business Scenario.
+ABOUT
+Salesforce-focused professional with experience in
+administration, customer support, troubleshooting,
+requirements gathering and solution demonstrations.
 
-<img width="800" height="1024" alt="ChatGPT Image Aug 30, 2026, 09_18_51 PM" src="https://github.com/user-attachments/assets/06fa6de0-5d95-4810-b132-96f62a736c49" />
+PROJECT
+Salesforce Sales Operations CRM
+B2B SaaS / IT Company
 
+KEY CAPABILITIES
+┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+│ CRM            │ │ Security       │ │ Automation     │
+│                │ │                │ │                │
+│ Accounts       │ │ OWD            │ │ Flow           │
+│ Contacts       │ │ Roles          │ │ Approval       │
+│ Opportunities  │ │ Permissions    │ │ Notifications  │
+└────────────────┘ └────────────────┘ └────────────────┘
 
-1. Created a Custom Object Customer Onboarding And fields:- Account - Lookup,
-Opportunity            - Master Detail,
-Onboarding Status      - Picklist,
-Completion Date        - Formula (Date) - IF(ISPICKVAL(Opportunity__r.StageName , 'Closed Won'), Today(), null)
-
-<img width="1918" height="774" alt="image" src="https://github.com/user-attachments/assets/2fa9a3a9-c8dd-4913-ad75-0b2f702f5b7c" />
-
-Created One Screen flow for Customer Onboarding to create record.
-
-<img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/f80562f8-d957-474d-aa6d-d91929b4aa70" />
-
-It is being used on opportunity object in quick action.
-<img width="1913" height="809" alt="image" src="https://github.com/user-attachments/assets/d87185c3-0c4a-408c-bf9e-3daf8d8d7cdc" />
-
-2. Created Another Object : - Sales Request, Fields Created: 
-
-Request Type           - Picklist,
-Account                - Lookup,
-Opportunity            - Lookup,
-Request Status         - Picklist,
-Priority               - Picklist,
-Request Description    - Long Text Area
-
-<img width="1914" height="768" alt="image" src="https://github.com/user-attachments/assets/385be1bf-e0fd-4da2-ad27-0f604495c0d3" />
-
-3. Created Custom Fields on Account, Opportunity and Contacts
-   
-Account:-
-Customer Tier - Picklist,
-Customer Segment - Picklist,
-Region - Picklist
-Industry - Picklist
-Customer Health - Formula
-
-Opportunity:-
-Deal Type - Picklist
-Sales Region - 
-
-Formula Text -IF(
-ISPICKVAL( Account.Region__c , 'EMEA'), 'EMEA',
-IF(ISPICKVAL( Account.Region__c , 'AMER'), 'AMER',
-IF(ISPICKVAL( Account.Region__c , 'APAC'), 'APAC',
-IF(ISPICKVAL( Account.Region__c , 'LATAM'), 'LATAM', null))) ),
-
-Approval Required - Formula(Checkbox)- IF(AND(Amount >= 100000, Discount__c>=0.05), True, False),
-
-Risk Level - Formula(Text) - IF( ExpectedRevenue <= 20000, 'Low', 'High')
-
-Contact:- 
-Decision Maker - Formula(Checkbox) - IF(ISPICKVAL(Departments__c, 'Finance & Accounting'), true, false)
-Preferred Contact Method - Picklist
-
-
-4. Security Model
-
-Since we created 3 permission sets for our 3 custom object. However, we could have done it in one permission set but doing it with a separate one can be assigned to other team members as well to not give the access which is not required. We created a permission set group and assigned this to Dipti Agarwal (Standard User) Support Team and Rahul Chaurasiya is Support Manager in role.
-
-<img width="1908" height="816" alt="image" src="https://github.com/user-attachments/assets/2b8d5ee2-62a3-4b93-8477-f4b1cd24243b" />
-
-Moreover the Owd for Account, Opportunity, Contact, Case, Sales Request, Customer Onboarding and Data quality is set to private.
-
-<img width="1903" height="759" alt="image" src="https://github.com/user-attachments/assets/6193a0b4-0cdf-4d3b-81bc-1be6c4f4593e" />
-
-Here is the permission set group which is assigned to one user since developer org has limited license.
-
-<img width="1902" height="816" alt="image" src="https://github.com/user-attachments/assets/b9516d0b-2e44-4d93-ad2b-98f2a9fe274f" />
-
-In this example Support Manager is able to see the record owned by Support team via Role Hierarchy.
-
-<img width="1909" height="813" alt="image" src="https://github.com/user-attachments/assets/6ec2324a-b95f-4a6a-bdfd-63e47af6c6f9" />
-
-Moreover, We have also written a sharing rule where Closed won opportunity is shared with finance team.
-
-<img width="1899" height="812" alt="image" src="https://github.com/user-attachments/assets/5984c379-0c6d-4d43-b69c-ece96e284652" />
-
-We utilize dedicated Account and Opportunity record types to isolate new customer acquisition from existing account management, optimizing the layout and sales stages for each motion. 
-
-<img width="1908" height="819" alt="image" src="https://github.com/user-attachments/assets/ab532f70-a437-4fd7-b90d-7d7f291630a2" />
-
-We have created dedicated 'Opportunity Information' and 'Renewal Information' page layouts to ensure users see only the relevant fields, picklists, and sections required for either a new sales cycle or an active contract renewal.
-
-<img width="1911" height="820" alt="image" src="https://github.com/user-attachments/assets/a2522f53-d091-4784-83d5-68231fe2e980" />
-
-I have implemented targeted validation rules across these record types to enforce data integrity, ensuring critical fields are populated correctly at key sales stages before a deal can progress.
-
-<img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/8ad352dc-454a-49c3-9efa-f5546211d837" />
-
-<img width="1918" height="825" alt="image" src="https://github.com/user-attachments/assets/b0d6dd83-0580-48ac-9533-b8ce2f7e0418" />
-
-<img width="1918" height="825" alt="image" src="https://github.com/user-attachments/assets/5c00e04e-b0ae-4b28-a3fe-df4b9016a16c" />
-
-Here is an example of flow which is sending an opportunity for approval if amount is than 100000 and discount more than 5%.
-
-<img width="1918" height="820" alt="image" src="https://github.com/user-attachments/assets/d94507b2-e5c3-475e-9070-26fafb58e86b" />
-
-<img width="1918" height="823" alt="image" src="https://github.com/user-attachments/assets/9f30dc96-c46c-4745-892d-ab05fcdbd357" />
-
-Another example of flow where This flow triggers and create one task and send email to the primary contact for onboarding and send notification to the opportunity owner.
-
-<img width="1917" height="819" alt="image" src="https://github.com/user-attachments/assets/f1322504-0785-4c47-a761-4ec07e033633" />
-
-5. Reports
-
-   Here is an example of Tabular reports where we are using only filters to show opportunity.
-
-   <img width="1918" height="813" alt="image" src="https://github.com/user-attachments/assets/ccb4210d-a9fe-4192-8250-9fc7dc0f6e9f" />
-
-   Here is one more example of Summary report where Opportunity is grouped by stage
-
-   <img width="1912" height="789" alt="image" src="https://github.com/user-attachments/assets/3d4d7de8-56c8-4957-9251-6e5df64db6c9" />
-
-   Here is one more example of Matrix report where we have used grouped by row and coloumn both.
-
-   <img width="1918" height="822" alt="image" src="https://github.com/user-attachments/assets/22abcbe1-ef33-403b-875b-bb5c708f2606" />
-
-   Here is one more example for Joined report.
-
-   <img width="1909" height="794" alt="image" src="https://github.com/user-attachments/assets/c3322f7b-2b2d-42e7-8886-9f1c2f6aa290" />
-
-Here is an example of Dashboard combining the report.
-
-<img width="1917" height="824" alt="image" src="https://github.com/user-attachments/assets/682aa843-ee57-4500-b153-e86b72f8f255" />
-
-6. Data
-
-After creating all these object and rules. We need data in the salesforce org. So we uploaded the data via Data Import Wizard for Account and Contact. Where First we imported the account and used the account name to map contact with the account.
-
-<img width="1918" height="819" alt="image" src="https://github.com/user-attachments/assets/2d5d68db-c944-4bf3-91d2-fa99d1c3c688" />
-
-Moreover, we can not use Data import wizard to insert opportunity in Developer edition. So we used workbench to insert opportunity.
-
-7. Since Developer edition does not have Sandbox available. I have explained it below.
-
-   ### Flow Deployment & Change Management
-
-In a production Salesforce environment, I would first develop and configure the Flow in a sandbox environment rather than making changes directly in production. After completing the configuration, I would test the Flow using multiple scenarios, including positive, negative, and edge cases, and verify that the Flow does not create unintended updates, duplicate records, or recursive execution. Once testing is complete, I would document the change, its business purpose, dependencies, and expected impact, and validate the required metadata and configuration. The Flow would then be deployed to the production environment using an appropriate Salesforce deployment method, such as Change Sets or Salesforce CLI/DevOps tools, depending on the organization's release-management process. After deployment, I would activate the appropriate Flow version in production, perform post-deployment validation with representative records, monitor for errors, and confirm with the relevant stakeholders that the business process is functioning as expected. Any issues identified after deployment would be investigated through Flow error emails, debug logs, and configuration review, with corrective changes managed through the same controlled deployment process.
+┌────────────────┐ ┌────────────────┐ ┌────────────────┐
+│ Data Quality   │ │ Reporting      │ │ Troubleshoot   │
+│                │ │                │ │                │
+│ Validation     │ │ Reports        │ │ Root Cause     │
+│ Governance     │ │ Dashboard      │ │ Resolution     │
+└────────────────┘ └────────────────┘ └────────────────┘
