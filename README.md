@@ -125,16 +125,6 @@ Reporting & Continuous Improvement
 
 ---
 
-## 📚 Currently Learning
-
-* Salesforce CPQ
-* Quote-to-Cash Processes
-* HubSpot CRM Administration
-* Microsoft Dynamics 365
-* Advanced Salesforce Administration
-
----
-
 ## 🤝 Let's Connect
 
 * 💼 LinkedIn: www.linkedin.com/in/gaurav-pal-971203155
